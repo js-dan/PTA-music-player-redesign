@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>IMAGINE DRAGONS's Player</title>
+    <link rel="stylesheet" href="style.css" media="all">
+</head>
+<body>
+    <div class="band">
+        <div class="about">
+            <img src="./assets/logo_imagine_dragons.png">
+            <img src="./assets/image.png">
+            <div class="band_description">
+                <h1>About the Band</h1>
+                <p>Imagine Dragons is an American pop rock band from Las Vegas, 
+                    Nevada, consisting of lead singer Dan Reynolds, lead 
+                    guitarist Wayne Sermon, bassist Ben McKee, and drummer 
+                    Daniel Platzman.</p>
+            </div>
+        </div>
+    </div>    
+    <div class="player" id="player-1">
+        <audio src="./musics/Imagine Dragons - Thunder.mp3">
+        </audio>
+        <h1>Thunder</h1>
+        <div class="controls">
+            <div class="bar-current"></div>
+            <div class="progress-bar"></div>
+            <button class="action backward"><img src="./assets/rewind.png"></button>
+            <button class="action play/pause"><img src="./assets/play.svg"></button>
+            <button class="action forward"><img src="./assets/fast-forward.png"></button>            
+        </div>            
+    </div>
+    <div class="playlist">
+        
+    </div>
+        
+    
+    <script src="./js/player-oop.js"></script>
+    <script>
+        const p1 = new Player({ playerId: 'player-1' })        
+    </script>
+    
+</body>
+</html>
