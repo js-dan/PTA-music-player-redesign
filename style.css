@@ -119,6 +119,8 @@ img#logo_banda {
 .albumCover {
     width: 90%;
     padding-top: 90%;
+    border-radius: 15px;
+    margin-top: 10%;
 }
 
 #controlBars {
@@ -241,7 +243,7 @@ img#logo_banda {
     }
 
     .band {
-        width: 80%;        
+        width: 100%;        
         height: auto;
     }
     
@@ -267,13 +269,13 @@ img#logo_banda {
         display: flex; 
         flex-direction: column; 
         height: auto;
-        width: 75vw;
+        width: 90%;
         justify-content: space-between;
         align-items: center;
     }
 
     .playerContent {
-        width: 80%;
+        width: 100%;
         height: auto;
     }
     
@@ -285,7 +287,7 @@ img#logo_banda {
 
     .playlistContent {
         align-items: flex-start;
-        width: 80%;
+        width: 100%;
     }
 
     .playlist {
