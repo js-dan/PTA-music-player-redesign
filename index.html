@@ -22,12 +22,22 @@
                 </div>
             </div>    
             <div class="playerContent">
-                <div class="player" id="player-1">
-                    <audio src="./musics/Imagine Dragons - Thunder.mp3">
-                    </audio>
-                    <h1>Thunder</h1>
-                    <div class="bar-current"></div>
-                    <div class="progress-bar"></div>
+                <div class="player">
+                    <div class="albumCover"></div>                
+                    <h5>title</h5>  
+                    <div class="col s6 range-field valign-wrapper" id="controlBars">
+                        <input type="range" min=0 max=0 id="seekbar" step="1">
+                        <div>
+                            <a href="#">
+                                <i class="material-icons" id=vol>volume_up</i>
+                            </a>                            
+                        </div>
+                        <input type="range" min=0 max=100 id="volume" step="1">
+                    </div>  
+                    <div class="durationStatus">
+                        <div class="col s2" id="currentDuration">00:00</div>
+                        <div class="col s2" id="totalDuration">00:00</div>
+                    </div>                
                     <div class="controls">                    
                         <button class="action_backward"><img src="./assets/rewind.png"></button>
                         <button class="action_playPause"><img src="./assets/play.png"></button>
@@ -50,10 +60,8 @@
                 </div>
             </div>
         </div>
-    </div>
-        
-    
-    <script src="./js/player-oop.js"></script>
+    </div> 
+    <script src="index.js" type="module"></script>
     <script>
         const p1 = new Player({ playerId: 'player-1' })        
     </script>
